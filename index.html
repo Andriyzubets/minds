@@ -299,8 +299,65 @@
 		</section>
 		<!-- right section -->
 		<section class="right">
-			
-		</section>
-	</main>
-</body>
-</html>
+			<!-- information -->
+			<div class="info">
+				<h2>Информация</h2>
+				<div class="container">
+					<div>
+						<a href=""  onclick="openbox('info-block-1');openbox('pl');openbox('min'); return false">
+							<span id="pl">+</span>
+							<span id="min" style="display: none;">-</span>
+						</a>
+						<h3>Название блока</h3>
+						<p id="info-block-1" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat labore dolorum ullam quis ea quia ut id, optio consequatur cum accusantium quae aperiam expedita, dolore, ex iste eveniet molestiae dolores. <br><br>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aut laborum nam odit, tenetur odio, ut, molestias quidem dolores nemo optio laudantium sed. Corrupti commodi natus, laborum totam dignissimos. Rem!</span><span>Saepe rerum magni velit cumque inventore sed tempora quibusdam quos, delectus pariatur quidem quisquam cupiditate corrupti ex obcaecati in perspiciatis aliquid at debitis doloribus a consequatur nesciunt iure quasi. Tempore?</span>
+						</p>
+					</div>
+					<div>
+						<a href=""  onclick="openbox('info-block-2');openbox('pl1');openbox('min1'); return false">
+							<span id="pl1">+</span>
+							<span id="min1" style="display: none;">-</span>
+						</a>
+						<h3>Название блока</h3>
+						<p id="info-block-2" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat labore dolorum ullam quis ea quia ut id, optio consequatur cum accusantium quae aperiam expedita, dolore, ex iste eveniet molestiae dolores. <br><br>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aut laborum nam odit, tenetur odio, ut, molestias quidem dolores nemo optio laudantium sed. Corrupti commodi natus, laborum totam dignissimos. Rem!</span><span>Saepe rerum magni velit cumque inventore sed tempora quibusdam quos, delectus pariatur quidem quisquam cupiditate corrupti ex obcaecati in perspiciatis aliquid at debitis doloribus a consequatur nesciunt iure quasi. Tempore?</span>
+						</p>
+					</div>
+					<div>
+						<a href=""  onclick="openbox('info-block-3');openbox('pl2');openbox('min2'); return false">
+							<span id="pl2">+</span>
+							<span id="min2" style="display: none;">-</span>
+						</a>
+						<h3>Название блока</h3>
+						<p id="info-block-3" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat labore dolorum ullam quis ea quia ut id, optio consequatur cum accusantium quae aperiam expedita, dolore, ex iste eveniet molestiae dolores. <br><br>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aut laborum nam odit, tenetur odio, ut, molestias quidem dolores nemo optio laudantium sed. Corrupti commodi natus, laborum totam dignissimos. Rem!</span><span>Saepe rerum magni velit cumque inventore sed tempora quibusdam quos, delectus pariatur quidem quisquam cupiditate corrupti ex obcaecati in perspiciatis aliquid at debitis doloribus a consequatur nesciunt iure quasi. Tempore?</span>
+						</p>
+					</div>
+					<div>
+						<a href=""  onclick="openbox('info-block-4');openbox('pl3');openbox('min3'); return false">
+							<span id="pl3">+</span>
+							<span id="min3" style="display: none;">-</span>
+						</a>
+						<h3>Название блока</h3>
+						<p id="info-block-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat labore dolorum ullam quis ea quia ut id, optio consequatur cum accusantium quae aperiam expedita, dolore, ex iste eveniet molestiae dolores. <br><br>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aut laborum nam odit, tenetur odio, ut, molestias quidem dolores nemo optio laudantium sed. Corrupti commodi natus, laborum totam dignissimos. Rem!</span><span>Saepe rerum magni velit cumque inventore sed tempora quibusdam quos, delectus pariatur quidem quisquam cupiditate corrupti ex obcaecati in perspiciatis aliquid at debitis doloribus a consequatur nesciunt iure quasi. Tempore?</span>
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script type="text/javascript">
+			function openbox(id){
+				display = document.getElementById(id).style.display;
+
+				if(display=='none'){
+					document.getElementById(id).style.display='block';
+				}else{
+					document.getElementById(id).style.display='none';
+				}
+			}
+
+
+		</script>
+	</body>
+	</html>

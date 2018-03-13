@@ -48,6 +48,8 @@ h2, h3, h4 {
 	color: #2d2824;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.2em;
+	text-transform: uppercase;
+
 }
 /* rating styles */
 .rate {
@@ -439,4 +441,48 @@ h2 {
 .knowledges .double .progress .width {
 	background: #424243;
 	height: 100%;
+}
+/* right */
+.right {
+	width: calc(60% - 120px);
+	padding: 0 100px 0 10px;
+}
+.right .info h2 {
+	text-transform: uppercase;
+	margin-left: 50px;
+}
+.right .info h2:before {
+	content: "i";
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	background: #297a79;
+	color: #ffffff;
+	transform: translate(-65px, -9px);
+	line-height: 50px;
+	text-align: center;
+	text-transform: lowercase;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.right .info .container div>a {
+    position: absolute;
+    text-decoration: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #0e0309;
+    transform: translate(-30px);
+    line-height: 18px;
+    text-align: center;
+    font-size: 22px;
+}
+.right .info .container a span:last-child {
+	line-height: 14px;
+}
+.right .info .container > div {
+	margin: 0 0 2%;
 }
