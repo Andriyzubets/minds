@@ -258,7 +258,7 @@ h2 {
 .left .base-info table p {
 	margin: 0 0 10px;
 }
-.specializasion, .content-links, .contacts, .main-links, .knowledges, .experience {
+.specializasion, .content-links, .contacts, .main-links, .knowledges, .experience, .communications {
 	padding: 38px 0 28px;
 	margin: 0 25px 0 0;
 	border-bottom: 2px solid #c0c1c2;
@@ -473,17 +473,17 @@ h2 {
 }
 
 .right .info .container div>a {
-    position: absolute;
-    text-decoration: none;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 3px solid #0e0309;
-    transform: translate(-30px);
-    line-height: 18px;
-    text-align: center;
-    font-size: 22px;
-    background: #fff;
+	position: absolute;
+	text-decoration: none;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 3px solid #0e0309;
+	transform: translate(-30px);
+	line-height: 18px;
+	text-align: center;
+	font-size: 22px;
+	background: #fff;
 }
 .right .info .container a span:last-child {
 	line-height: 14px;
@@ -493,34 +493,34 @@ h2 {
 }
 .right .experience .container {
 	border-left: 2px solid #317f7e;
-    padding: 0 0 0 10px;
+	padding: 0 0 0 10px;
 }
 .experience h2 {
 	margin-left: 60px;
 }
 .experience h2:before {
 	content: "";
-    width: 65px;
-    height: 65px;
-    background: url(../img/case-icon.png) 50% no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
-    display: block;
-    position: absolute;
-    transform: translate(-80px,-20px);
+	width: 65px;
+	height: 65px;
+	background: url(../img/case-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	display: block;
+	position: absolute;
+	transform: translate(-80px,-20px);
 }
 .experience .container> div > a {
-	    position: absolute;
-    text-decoration: none;
-    border: 2px solid #317f7e;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    transform: translate(-21px, 4px);
-    line-height: 16px;
-    text-align: center;
-    font-size: 16px;
-    background: #fff;
+	position: absolute;
+	text-decoration: none;
+	border: 2px solid #317f7e;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	transform: translate(-21px, 4px);
+	line-height: 16px;
+	text-align: center;
+	font-size: 16px;
+	background: #fff;
 }
 .experience .container a span:last-child {
 	line-height: 14px;
@@ -571,3 +571,73 @@ h2 {
 	color: #8f9194;
 	margin: 0 0 25px;
 }
+.communications h2, .communications>p {
+	margin: 0 0 0 60px;
+}
+.communications h2:before {
+	content: "";
+	width: 65px;
+	height: 65px;
+	background: url(../img/group-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	display: block;
+	position: absolute;
+	transform: translate(-80px,-20px);
+}
+.communications {
+	border-bottom: none;
+}
+.communications .wrap {
+	width: 100%;
+	overflow: hidden;
+}
+.communications .thumbs {
+	margin: 30px 0 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
+.communications .thumbs .item {
+	width: 30%;
+	margin: 0 3%;
+}
+.communications .thumbs .frame {
+	width: 100%;
+	height: 150px;
+	border:6px solid #fff;
+	box-shadow: 0 0 15px #ccc;
+	transform: rotate(-2deg);
+}
+.communications .thumbs .photo {
+	width: 100%;
+	height: 150px;
+	border:6px solid #fff;
+	box-shadow: 0 0 15px #ccc;
+	transform: rotate(2deg) translate(0,-4px);
+}
+.communications .thumbs .photo-1 {
+	background: url(../img/photo-text.jpg) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.communications .thumbs .photo-2 {
+	background: url(../img/photo-text-1.jpg) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.communications .thumbs .item p {
+	margin: 15px 0;
+	font-size: 12px;
+	font-weight: 700;
+}
+.communications .thumbs .item p:last-child {
+	font-weight: 400;
+	margin:-15px 0 0;
+}
+/*
+*/
