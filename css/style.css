@@ -258,7 +258,7 @@ h2 {
 .left .base-info table p {
 	margin: 0 0 10px;
 }
-.specializasion, .content-links, .contacts, .main-links, .knowledges {
+.specializasion, .content-links, .contacts, .main-links, .knowledges, .experience {
 	padding: 38px 0 28px;
 	margin: 0 25px 0 0;
 	border-bottom: 2px solid #c0c1c2;
@@ -368,7 +368,7 @@ h2 {
 	justify-content: space-between;
 	margin-top: 15px;
 }
-.contacts .double .icon, .main-links .double .icon {
+.contacts .double .icon, .main-links .double .icon, .sub-desc .double .icon {
 	width: 40px;
 	height: 40px;
 }
@@ -377,7 +377,7 @@ h2 {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.contacts .double .content, .main-links .double .content {
+.contacts .double .content, .main-links .double .content, .sub-desc .double .content {
 	width: 75%;
 }
 .contacts .double a, .main-links .double a {
@@ -403,18 +403,18 @@ h2 {
 	align-items: center;
 	margin: 0 0 15px;
 }
-.main-links .double .email {
+.main-links .double .email, .sub-desc .double .email {
 	background: url(../img/email-link.png) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 
 }
-.main-links .double .web {
+.main-links .double .web, .sub-desc .double .web {
 	background: url(../img/web-link.png) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.knowledges .double {
+.knowledges .double, .sub-desc .double  {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -446,6 +446,10 @@ h2 {
 .right {
 	width: calc(60% - 120px);
 	padding: 0 100px 0 10px;
+}
+.right .info {
+	border-bottom: 2px solid #c0c1c2;
+	padding: 0 0 30px;
 }
 .right .info h2 {
 	text-transform: uppercase;
@@ -479,10 +483,91 @@ h2 {
     line-height: 18px;
     text-align: center;
     font-size: 22px;
+    background: #fff;
 }
 .right .info .container a span:last-child {
 	line-height: 14px;
 }
 .right .info .container > div {
 	margin: 0 0 2%;
+}
+.right .experience .container {
+	border-left: 2px solid #317f7e;
+    padding: 0 0 0 10px;
+}
+.experience h2 {
+	margin-left: 60px;
+}
+.experience h2:before {
+	content: "";
+    width: 65px;
+    height: 65px;
+    background: url(../img/case-icon.png) 50% no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    transform: translate(-80px,-20px);
+}
+.experience .container> div > a {
+	    position: absolute;
+    text-decoration: none;
+    border: 2px solid #317f7e;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translate(-21px, 4px);
+    line-height: 16px;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+}
+.experience .container a span:last-child {
+	line-height: 14px;
+}
+.experience .container .header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 0 0 15px 65px;
+}
+.experience .container .header p:first-child {
+	color: #434244;
+	margin: 0 25px 0 0;
+}
+.experience .container .header p:last-child {
+	color: #398483;
+	text-transform: uppercase;
+	line-height: 1;
+}
+.experience .container .header p span {
+	color: #434244;
+}
+.experience .container .header p span:last-child {
+	color: #c0c0c2;
+	text-transform: none;
+	font-size: 12px;
+}
+.experience .container ul {
+	list-style: none;
+	width: 48%;
+	margin: 3% 0 0;
+}
+.experience .container .double {
+	margin: 0 0 15px;
+}
+.experience .container .sub-desc {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.experience .container .sub-desc a {
+	text-decoration: none;
+	color: #8f9194;
+	margin: 0 0 25px;
 }
