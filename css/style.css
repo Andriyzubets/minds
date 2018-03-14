@@ -522,7 +522,7 @@ h2 {
 	font-size: 16px;
 	background: #fff;
 }
-.experience .container a span:last-child {
+.experience .container a span:last-child, .communications .item a span:last-child {
 	line-height: 14px;
 }
 .experience .container .header {
@@ -550,15 +550,15 @@ h2 {
 	text-transform: none;
 	font-size: 12px;
 }
-.experience .container ul {
+.experience .container ul, .communications .sub-desc ul {
 	list-style: none;
 	width: 48%;
 	margin: 3% 0 0;
 }
-.experience .container .double {
+.experience .container .double, .communications .sub-desc .double {
 	margin: 0 0 15px;
 }
-.experience .container .sub-desc {
+.experience .container .sub-desc, .communications .sub-desc {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -566,7 +566,7 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 }
-.experience .container .sub-desc a {
+.experience .container .sub-desc a, .communications .sub-desc a {
 	text-decoration: none;
 	color: #8f9194;
 	margin: 0 0 25px;
@@ -591,6 +591,7 @@ h2 {
 .communications .wrap {
 	width: 100%;
 	overflow: hidden;
+	margin: 0 0 70px;
 }
 .communications .thumbs {
 	margin: 30px 0 0;
@@ -601,6 +602,7 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	width: 100vw;
+	position: relative;
 }
 .communications .thumbs .item {
 	width: 30%;
@@ -635,9 +637,23 @@ h2 {
 	font-size: 12px;
 	font-weight: 700;
 }
-.communications .thumbs .item p:last-child {
+.communications .thumbs .item p:nth-child(3n) {
 	font-weight: 400;
 	margin:-15px 0 0;
+}
+.communications .thumbs .item a {
+	position: relative;
+	text-decoration: none;
+	border: 2px solid #317f7e;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin: 15px 0 0;
+	line-height: 16px;
+	text-align: center;
+	font-size: 16px;
+	background: #fff;
+	display: block;
 }
 /*
 */
