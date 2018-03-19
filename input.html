@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Мозги | поиск</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header style="height: 200px; padding: 0;">
+		<ul class="temp-menu">
+			<li><a href="index.html">Карточка профиля</a></li>
+			<li><a href="search.html">Поиск профессионала</a></li>
+			<li><a href="input.html">Наполнение</a></li>
+		</ul>
+	</header>
+	<main class="main-content">
+		<form class="input-form" action="<?php bloginfo('template_directory'); ?>/tobase.php" method="post" name="forma">
+			<div>
+				<label for="last_name">Фамилия:
+				<input type="text" name="last_name" size="30"></label>
+				<label for="first_name">Имя:
+				<input type="text" name="first_name" size="30"></label>
+				<label for="middle_name">Отчество:
+				<input type="text" name="middle_name" size="30"></label>
+				<label for="profesie">Профессия:
+				<input type="text" name="profesie" size="30"></label>
+				<label for="academic_degree">Ученая степень:
+				<input type="text" name="academic_degree" size="30"></label>
+				<label for="gender">Пол:
+				<input type="text" name="gender" size="30"></label>
+				<label for="photo">Фото:
+				<input type="file" name="photo" /></label>
+				<label for="date_of_birth">Дата рождения:
+				<input type="text" name="date_of_birth" size="30"></label>
+				<label for="adress">Адрес:
+				<input type="text" name="adress" size="30"></label>
+				<label for="location">Город проживания:
+				<input type="text" name="location" size="30"></label>
+				<label for="email">Email:
+				<input type="text" name="email" size="30"></label>
+				<label for="skype">skype
+				<input name="skype" type="text" value="" size="30"></label>
+				<label for="patents">Наличие патентов:
+				<input type="text" name="patents" size="30"></label>
+				<label for="rating">Рейтинг:
+				<input type="text" name="rating" size="30"></label>
+				<label for="greeting">Тeплота отношений:
+				<input type="text" name="greeting" size="30"></label>
+				<label for="info">Дополнительная информация
+				<textarea id="info" class="info" name="info"></textarea></label>
+			</div>
+			<br/>
+				<input id="submit" type="submit" value="submit" target="_blank"><br/>
+		</form>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
