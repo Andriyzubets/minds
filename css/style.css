@@ -590,6 +590,7 @@ h2 {
 }
 .communications {
 	border-bottom: none;
+	position: relative;
 }
 .communications .wrap {
 	width: 100%;
@@ -666,9 +667,12 @@ h2 {
 	background: #f1f1f1 url(../img/play-icon.png) 65% no-repeat;
 	-webkit-background-size: 40%;
 	background-size: 40%;
-	transform: rotate(180deg) translate(31px,-140px);
+	transform: rotate(180deg);
 	border: none;
 	outline: none;
+	    position: absolute;
+    left: -40px;
+    top: 200px;
 }
 .communications #rightButton {
 	width: 40px;
@@ -680,6 +684,9 @@ h2 {
 
 	border: none;
 	outline: none;
+	    right: -60px;
+    position: absolute;
+    top: 200px;
 }
 
 /* search page*/
