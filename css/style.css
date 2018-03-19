@@ -603,6 +603,7 @@ h2 {
 	justify-content: space-between;
 	width: 100vw;
 	position: relative;
+	transform: translateX(0px);
 }
 .communications .thumbs .item {
 	width: 30%;
@@ -655,5 +656,311 @@ h2 {
 	background: #fff;
 	display: block;
 }
-/*
-*/
+.communications #leftButton {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #f1f1f1 url(../img/play-icon.png) 65% no-repeat;
+	-webkit-background-size: 40%;
+	background-size: 40%;
+	transform: rotate(180deg) translate(31px,-140px);
+	border: none;
+	outline: none;
+}
+.communications #rightButton {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #f1f1f1 url(../img/play-icon.png) 65% no-repeat;
+	-webkit-background-size: 40%;
+	background-size: 40%;
+
+	border: none;
+	outline: none;
+}
+
+/* search page*/
+
+.form-container .search-field {
+	display: block;
+	width: 65%;
+	height: 40px;
+	margin: 0 0 40px 40px;
+	border: none;
+	background: #f4f4d7;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	text-align: center;
+	color: #111;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.form-container .search-field_before:before {
+	content: "";
+	position: absolute;;
+	display: block;
+	width: 45px;
+	height: 40px;
+	background: #434244 url(../img/search-icon.png) 50% no-repeat;
+	-webkit-background-size: 90%;
+	background-size: 90%;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.form-container .reset-btn {
+	display: block;
+	border: none;
+	text-align: right;
+	padding-right: 40px;
+	width: calc(76% - 40px);
+	text-transform: uppercase;
+	color: #8a8c8f;
+	font-size: 12px;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	margin: 0 0 20px 40px;
+}
+.form-container .reset-btn:after {
+	content: "x";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid #8a8c8f;
+	position: absolute;
+	right: 5%;
+	text-align: center;
+	text-transform: lowercase;
+	line-height: 14px;
+	cursor: pointer;
+}
+.physics-choice, .chemie-choice, .code-choice, .country-choice,  .city-choice, .institution-choice, .company-choice, .position-choice {
+	overflow: hidden;
+	-webkit-transition: max-height .8s;
+	transition: max-height .8s;
+	margin-bottom: 3px;
+}
+label.country-choice-label {
+	margin-top: 40px;
+}
+.physics-choice-label, .chemie-choice-label, .code-choice-label {
+	display: block;
+	width: 64%;
+	height: 40px;
+	margin: 0 0 0 45px;
+	border: none;
+	background: #323133;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: -2px;
+	line-height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 100;
+}
+.country-choice-label, .city-choice-label, .institution-choice-label, .company-choice-label, .position-choice-label {
+	display: block;
+	width: 64%;
+	height: 40px;
+	margin: 0 0 0 45px;
+	border: none;
+	background: #f4f4d7;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	text-align: center;
+	color: #111;
+	font-size: 18px;
+	letter-spacing: -2px;
+	line-height: 40px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 100;
+}
+.physics-choice-label:before, .chemie-choice-label:before, .code-choice-label:before  {
+	content: "";
+	position: absolute;;
+	display: block;
+	width: 45px;
+	height: 40px;
+	background: #f4f4d7 url(../img/phisic-icon.png) 50% no-repeat;
+	-webkit-background-size: 60%;
+	background-size: 60%;
+	border-top-left-radius: 45%;
+	border-bottom-left-radius: 45%;
+	cursor: pointer;
+	transform: translate(-45px,0);
+}
+.country-choice-label:before, .city-choice-label:before, .institution-choice-label:before, .company-choice-label:before, .position-choice-label:before {
+	content: "";
+	position: absolute;;
+	display: block;
+	width: 45px;
+	height: 40px;
+	background: #434244 url(../img/geo-icon.png) 50% no-repeat;
+	-webkit-background-size: 50%;
+	background-size: 50%;
+	border-top-left-radius: 45%;
+	border-bottom-left-radius: 45%;
+	cursor: pointer;
+	transform: translate(-45px,0);
+}
+
+.chemie-choice-label:before {
+	background: #f4f4d7 url(../img/chemie-icon.png) 50% 40% no-repeat;
+	-webkit-background-size: 40%;
+	background-size: 40%;
+}
+.code-choice-label:before {
+	background: #f4f4d7 url(../img/code-icon.png) 50% no-repeat;
+	-webkit-background-size: 50%;
+	background-size: 50%;
+}
+.city-choice-label:before {
+	background: #434244 url(../img/city-icon.png) 50% no-repeat;
+	-webkit-background-size: 50%;
+	background-size: 50%;
+}
+.institution-choice-label:before {
+	background: #434244 url(../img/study-icon.png) 50% no-repeat;
+	-webkit-background-size: 50%;
+	background-size: 50%;
+}
+.company-choice-label:before {
+	background: #434244 url(../img/company-icon.png) 50% no-repeat;
+	-webkit-background-size: 50%;
+	background-size: 50%;
+}
+.position-choice-label:before {
+	background: #434244 url(../img/case-icon.png) 50% no-repeat;
+	-webkit-background-size: 50%;
+	background-size: 50%;
+}
+.physics-choice label, .chemie-choice label, .code-choice label, .country-choice label, .city-choice label, .institution-choice label, .company-choice label, .position-choice label {
+	width: calc(64% - 20px);
+	height: 30px;
+	margin: 0 0 0 45px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+	font-size: 12px;
+	background: #f2f2e5;
+	color: #323133;
+}
+.physics-choice label:nth-child(2n), .chemie-choice label:nth-child(2n), .code-choice label:nth-child(2n), .country-choice label:nth-child(2n), .city-choice label:nth-child(2n), .institution-choice label:nth-child(2n), .company-choice label:nth-child(2n), .position-choice label:nth-child(2n)  {
+	background: #a2bbbb;
+}
+
+input {
+	outline: none;
+}
+#filter-select {
+	margin: 30px 0 0 100px;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	background: transparent;
+	cursor: pointer;
+}
+.filter-select {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+.filter-select:after {
+	content: "";
+	width: 1em;
+	height: 1em;
+	background: url(../img/filter-icon.png) 50% no-repeat;
+	background-size: contain;
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: -50px;
+	z-index: -1;
+}
+/* right */
+.right .search-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.right .search-wrapper .item {
+	width: 30%;
+	text-align: center;
+}
+.right .search-wrapper .item .item-img {
+	width: 100%;
+	max-height: 160px;
+	height: 30vw;
+	display: block;
+	position: relative;
+	background: url(../img/person.png) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: 0 0 20px;
+	border: 1px solid #626464;
+}
+.right .search-wrapper .item .item-img span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 2em;
+	padding: 0 .5em;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	background: #626464;
+	font-weight: 100;
+}
+.right .search-wrapper .item .item-title {
+	text-decoration: none;
+}
+.right .search-wrapper .item .item-title h3 {
+	font-weight: 400;
+}
+.right .search-wrapper .item .item-title h3 span {
+	font-weight: 700;
+}
+.right .search-wrapper .item .item-title p {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #111111;
+    font-size: 14px;
+}
+
+/*!!!!!!!!!!!!! Temp menu*/
+.temp-menu {
+	position: absolute;
+	
+	top: 50px;
+	right: 50px;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.temp-menu a {
+	text-decoration: none;
+	color: #fff;
+	margin-left: 30px;
+}
+/*!!!!!!!!!!!!!! temp menu*/

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Мозги | поиск</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header style="height: 200px; padding: 0;">
+		<ul class="temp-menu">
+			<li><a href="index.html">Карточка профиля</a></li>
+			<li><a href="search.html">Поиск профессионала</a></li>
+			<li><a href="#">Наполнение</a></li>
+		</ul>
+	</header>
+	<main class="main-content">
+		<section class="left">
+			<div class="form-container">
+				<form action="" method="POST">
+					<label for="searchField" class="search-field_before">
+						<input type="text" class="search-field" name="searchField" placeholder="Поиск...">
+					</label>
+					<button type="reset" class="reset-btn">Сбросить фильтр</button> 
+					<label for="physics-choice" class="physics-choice-label" onclick="heightBox('physics-choice');return false;">Физика</label>
+					<div id="physics-choice" class="physics-choice" style="max-height: 500px;">
+						<label for="phys-1">Ядерная физика<input type="checkbox" id="phys-1"></label>
+						
+						<label for="phys-2">Атомная физика<input type="checkbox" id="phys-2"></label>
+						
+						<label for="phys-3">Статистическая физика<input type="checkbox" id="phys-3"></label>
+						
+						<label for="phys-4">Квантовая физика<input type="checkbox" id="phys-4"></label>
+						
+					</div>
+					<label for="chemie-choice" class="chemie-choice-label" onclick="heightBox('chemie-choice');return false;">Химия</label>
+					<div id="chemie-choice" class="chemie-choice" style="max-height: 0px;">
+						<label for="chem-1">Ядерная химия<input type="checkbox" id="chem-1"></label>
+						
+						<label for="chem-2">Электрохимия<input type="checkbox" id="chem-2"></label>
+						
+						<label for="chem-3">Физическая химия<input type="checkbox" id="chem-3"></label>
+						
+						<label for="chem-4">Радиохимия<input type="checkbox" id="chem-4"></label>
+					</div>
+					<label for="code-choice" class="code-choice-label" onclick="heightBox('code-choice');return false;">Программирование</label>
+					<div id="code-choice" class="code-choice"  style="max-height: 0px;">
+						<label for="code-1">Front-end<input type="checkbox" id="code-1"></label>
+						
+						<label for="code-2">Back-end<input type="checkbox" id="code-2"></label>
+						
+						<label for="code-3">Design<input type="checkbox" id="code-3"></label>
+						
+						<label for="code-4">Quality control<input type="checkbox" id="code-4"></label>
+					</div>
+					<label for="country-choice" class="country-choice-label" onclick="heightBox('country-choice');return false;">Страна</label>
+					<div id="country-choice" class="country-choice">
+						<label for="country-1">Украина<input type="radio" id="country-1"></label>
+						
+						<label for="country-2">Россия<input type="radio" id="country-2"></label>
+						
+						<label for="country-3">Белорусия<input type="radio" id="country-3"></label>
+						
+						<label for="country-4">Казахстан<input type="radio" id="country-4"></label>
+					</div>
+					<label for="city-choice" class="city-choice-label" onclick="heightBox('city-choice');return false;">Город</label>
+					<div id="city-choice" class="city-choice"  style="max-height: 0px;">
+						<label for="city-1">Киев<input type="radio" id="city-1"></label>
+						
+						<label for="city-2">Москва<input type="radio" id="city-2"></label>
+						
+						<label for="city-3">Минск<input type="radio" id="city-3"></label>
+						
+						<label for="city-4">Астана<input type="radio" id="city-4"></label>
+					</div>
+					<label for="institution-choice" class="institution-choice-label" onclick="heightBox('institution-choice');return false;">Учебное заведение</label>
+					<div id="institution-choice" class="institution-choice"  style="max-height: 0px;">
+						<label for="institution-1">НАУ<input type="radio" id="institution-1"></label>
+						
+						<label for="institution-2">МГУ<input type="radio" id="institution-2"></label>
+						
+						<label for="institution-3">БАА<input type="radio" id="institution-3"></label>
+						
+						<label for="institution-4">КАМ<input type="radio" id="institution-4"></label>
+					</div>
+					<label for="company-choice" class="company-choice-label" onclick="heightBox('company-choice');return false;">Компания</label>
+					<div id="company-choice" class="company-choice"  style="max-height: 0px;">
+						<label for="company-1">Diko<input type="radio" id="company-1"></label>
+						
+						<label for="company-2">Metro<input type="radio" id="company-2"></label>
+						
+						<label for="company-3">M1<input type="radio" id="company-3"></label>
+						
+						<label for="company-4">EPam<input type="radio" id="company-4"></label>
+					</div>
+					<label for="position-choice" class="position-choice-label" onclick="heightBox('position-choice');return false;">Компания</label>
+					<div id="position-choice" class="position-choice"  style="max-height: 0px;">
+						<label for="position-1">Diko<input type="radio" id="position-1"></label>
+						
+						<label for="position-2">Metro<input type="radio" id="position-2"></label>
+						
+						<label for="position-3">M1<input type="radio" id="position-3"></label>
+						
+						<label for="position-4">EPam<input type="radio" id="position-4"></label>
+					</div>
+					<label for="filterSelect" class="filter-select">
+						<select name="filterSelect" id="filter-select">
+							<option value="name">По дате рождения</option>
+							<option value="name">По рейтингу</option>
+							<option value="name">По лояльности</option>
+
+						</select>
+					</label>
+				</form>
+			</div>
+		</section>
+		<section class="right">
+			<div class="search-wrapper">
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="index.html" class="item-img">
+						<span class="age">45 лет</span>
+					</a>
+					<a href="index.html" class="item-title">
+						<h3 class="name">
+							<span>Иванов</span> Иван
+						</h3>
+						<p class="specialization">
+							Front-end
+						</p>
+						<p class="professie">
+							Программист
+						</p>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
